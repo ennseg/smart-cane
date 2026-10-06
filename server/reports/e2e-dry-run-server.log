@@ -1,0 +1,301 @@
+2026-10-07 01:27:04,472 INFO    uvicorn.error: Started server process [36344]
+2026-10-07 01:27:04,473 INFO    uvicorn.error: Waiting for application startup.
+2026-10-07 01:27:04,490 INFO    telegram.dry_run: [TG → None] setMyCommands
+2026-10-07 01:27:04,491 INFO    cane_server.app: Сервер запущен: DRY_RUN=True, фоновые задачи: outbox, monitor
+2026-10-07 01:27:04,498 INFO    uvicorn.error: Application startup complete.
+2026-10-07 01:27:04,499 INFO    uvicorn.error: Uvicorn running on http://0.0.0.0:8766 (Press CTRL+C to quit)
+2026-10-07 01:27:05,223 INFO    uvicorn.access: 127.0.0.1:51528 - "GET /api/v1/health HTTP/1.1" 200
+2026-10-07 01:27:05,713 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+✅ Вы привязаны к трости «Трость Ивана». Сопровождающих у трости: 1.
+Теперь вам будут приходить тревоги. Попробуйте /where или /status.
+2026-10-07 01:27:05,717 INFO    uvicorn.access: 127.0.0.1:51529 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:27:06,252 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🔑 Код приглашения для трости «Трость Ивана»: <code>XJQP-C6XL</code>
+Действует до 08.10 01:27, только один раз.
+Второй сопровождающий должен отправить боту: <code>/bind XJQP-C6XL</code>
+2026-10-07 01:27:06,252 INFO    uvicorn.access: 127.0.0.1:51530 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:27:06,927 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+✅ Вы привязаны к трости «Трость Ивана». Сопровождающих у трости: 2.
+Теперь вам будут приходить тревоги. Попробуйте /where или /status.
+2026-10-07 01:27:06,927 INFO    uvicorn.access: 127.0.0.1:51531 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:27:06,929 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+👤 К трости «Трость Ивана» подключился новый сопровождающий: Пётр.
+2026-10-07 01:27:07,480 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+📍 <b>Трость Ивана</b>: позиция пока неизвестна — трость ещё не передавала координаты.
+Запросил свежую позицию — пришлю примерно через 3 с (после очередного выхода трости на связь).
+2026-10-07 01:27:07,480 INFO    uvicorn.access: 127.0.0.1:51532 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:27:13,759 INFO    cane_server.api.device_routes: Пакет cane-01 seq=1 type=pos buffered=False -> cmd=locate_now
+2026-10-07 01:27:13,759 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:13,786 INFO    cane_server.api.device_routes: Пакет cane-01 seq=2 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:13,786 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:13,789 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+📍 <b>Свежая позиция: Трость Ивана</b> (только что, 01:27).
+2026-10-07 01:27:13,794 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.957424,30.308769
+2026-10-07 01:27:16,801 INFO    cane_server.api.device_routes: Пакет cane-01 seq=3 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:16,801 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:19,816 INFO    cane_server.api.device_routes: Пакет cane-01 seq=4 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:19,816 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:22,839 INFO    cane_server.api.device_routes: Пакет cane-01 seq=5 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:22,840 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:25,861 INFO    cane_server.api.device_routes: Пакет cane-01 seq=6 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:25,862 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:28,876 INFO    cane_server.api.device_routes: Пакет cane-01 seq=7 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:28,876 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:31,893 INFO    cane_server.services.alerts: Событие gps_lost от cane-01 → чаты [1001, 1002]
+2026-10-07 01:27:31,899 INFO    cane_server.api.device_routes: Пакет cane-01 seq=8 type=gps_lost buffered=False -> cmd=None
+2026-10-07 01:27:31,899 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:31,904 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+📡 <b>Трость Ивана: пропал сигнал GPS</b>
+Возможно, человек в помещении или тоннеле. Последние координаты (только что) — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:31,907 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958658,30.310210
+2026-10-07 01:27:31,911 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+📡 <b>Трость Ивана: пропал сигнал GPS</b>
+Возможно, человек в помещении или тоннеле. Последние координаты (только что) — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:31,915 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.958658,30.310210
+2026-10-07 01:27:34,911 INFO    cane_server.api.device_routes: Пакет cane-01 seq=9 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:34,912 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:37,926 INFO    cane_server.services.alerts: Событие gps_ok от cane-01 → чаты [1001, 1002]
+2026-10-07 01:27:37,933 INFO    cane_server.api.device_routes: Пакет cane-01 seq=10 type=gps_ok buffered=False -> cmd=None
+2026-10-07 01:27:37,933 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:37,936 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🛰 <b>Трость Ивана: сигнал GPS восстановлен</b>
+Текущая позиция ниже.
+2026-10-07 01:27:37,942 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958632,30.310241
+2026-10-07 01:27:37,949 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🛰 <b>Трость Ивана: сигнал GPS восстановлен</b>
+Текущая позиция ниже.
+2026-10-07 01:27:37,953 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.958632,30.310241
+2026-10-07 01:27:40,956 INFO    cane_server.api.device_routes: Пакет cane-01 seq=11 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:40,956 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:43,974 INFO    cane_server.api.device_routes: Пакет cane-01 seq=12 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:43,974 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:46,989 INFO    cane_server.api.device_routes: Пакет cane-01 seq=13 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:46,989 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:50,005 INFO    cane_server.api.device_routes: Пакет cane-01 seq=14 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:50,006 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:50,447 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+📍 <b>Трость Ивана</b>: последняя позиция <b>только что</b> (01:27, спутников: 7).
+Запросил свежую позицию — пришлю примерно через 3 с (после очередного выхода трости на связь).
+2026-10-07 01:27:50,447 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958976,30.310525
+2026-10-07 01:27:50,448 INFO    uvicorn.access: 127.0.0.1:51534 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:27:53,019 INFO    cane_server.services.alerts: Событие still от cane-01 → чаты [1001, 1002]
+2026-10-07 01:27:53,046 INFO    cane_server.api.device_routes: Пакет cane-01 seq=15 type=still buffered=False -> cmd=locate_now
+2026-10-07 01:27:53,047 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:53,053 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🧍 <b>Трость Ивана: нет движения 10 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:53,068 INFO    cane_server.api.device_routes: Пакет cane-01 seq=16 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:53,068 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:53,086 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958977,30.310522
+2026-10-07 01:27:53,090 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🧍 <b>Трость Ивана: нет движения 10 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:53,094 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.958977,30.310522
+2026-10-07 01:27:53,099 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+📍 <b>Свежая позиция: Трость Ивана</b> (только что, 01:27).
+2026-10-07 01:27:53,119 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958973,30.310563
+2026-10-07 01:27:56,094 INFO    cane_server.api.device_routes: Пакет cane-01 seq=17 type=pos buffered=False -> cmd=None
+2026-10-07 01:27:56,095 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:59,109 INFO    cane_server.services.alerts: Событие still от cane-01 → чаты [1001, 1002]
+2026-10-07 01:27:59,120 INFO    cane_server.api.device_routes: Пакет cane-01 seq=18 type=still buffered=False -> cmd=None
+2026-10-07 01:27:59,121 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:27:59,123 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🧍 <b>Трость Ивана: нет движения 40 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:59,130 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.958966,30.310557
+2026-10-07 01:27:59,134 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🧍 <b>Трость Ивана: нет движения 40 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+2026-10-07 01:27:59,153 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.958966,30.310557
+2026-10-07 01:28:02,134 INFO    cane_server.api.device_routes: Пакет cane-01 seq=19 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:02,134 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:05,150 INFO    cane_server.services.alerts: Событие sos от cane-01 → чаты [1001, 1002]
+2026-10-07 01:28:05,164 INFO    cane_server.api.device_routes: Пакет cane-01 seq=20 type=sos buffered=False -> cmd=None
+2026-10-07 01:28:05,165 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:05,172 INFO    telegram.dry_run: [TG → 1001] sendMessage [кнопки: ✅ Принял]:
+🆘 <b>SOS! Трость Ивана просит помощи</b>
+Время: 01:28
+🔋 заряд 85 % (4,05 В)
+📍 Место — на карте ниже. Во время тревоги карта обновляется.
+Нажмите «✅ Принял», если вы займётесь тревогой.
+2026-10-07 01:28:05,182 INFO    cane_server.api.device_routes: Пакет cane-01 seq=20 type=sos buffered=False (дубликат) -> cmd=None
+2026-10-07 01:28:05,182 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:05,186 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.959315,30.310752 live=600s
+2026-10-07 01:28:05,200 INFO    cane_server.api.device_routes: Пакет cane-01 seq=21 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:05,201 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:05,219 INFO    telegram.dry_run: [TG → 1002] sendMessage [кнопки: ✅ Принял]:
+🆘 <b>SOS! Трость Ивана просит помощи</b>
+Время: 01:28
+🔋 заряд 85 % (4,05 В)
+📍 Место — на карте ниже. Во время тревоги карта обновляется.
+Нажмите «✅ Принял», если вы займётесь тревогой.
+2026-10-07 01:28:05,223 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.959315,30.310752 live=600s
+2026-10-07 01:28:06,727 INFO    cane_server.api.device_routes: Пакет cane-01 seq=22 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:06,727 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:06,732 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.959495,30.310757
+2026-10-07 01:28:06,743 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.959495,30.310757
+2026-10-07 01:28:08,257 INFO    cane_server.api.device_routes: Пакет cane-01 seq=23 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:08,257 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:08,259 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.959588,30.310806
+2026-10-07 01:28:08,274 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.959588,30.310806
+2026-10-07 01:28:09,777 INFO    cane_server.api.device_routes: Пакет cane-01 seq=24 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:09,777 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:09,779 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.959663,30.310808
+2026-10-07 01:28:09,801 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.959663,30.310808
+2026-10-07 01:28:11,294 INFO    cane_server.api.device_routes: Пакет cane-01 seq=25 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:11,295 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:11,296 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.959756,30.310909
+2026-10-07 01:28:11,301 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.959756,30.310909
+2026-10-07 01:28:12,816 INFO    cane_server.api.device_routes: Пакет cane-01 seq=26 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:12,816 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:12,823 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.959866,30.310924
+2026-10-07 01:28:12,828 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.959866,30.310924
+2026-10-07 01:28:14,341 INFO    cane_server.api.device_routes: Пакет cane-01 seq=27 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:14,341 INFO    uvicorn.access: 127.0.0.1:51533 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:14,343 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.960194,30.311082
+2026-10-07 01:28:14,346 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.960194,30.311082
+2026-10-07 01:28:24,661 INFO    cane_server.services.monitor: Фоновая проверка: MonitorReport(silent_devices=1, sos_reminders=0, expired_commands=0)
+2026-10-07 01:28:24,663 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Возможны проблемы со связью или питанием.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:28:24,668 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.960194,30.311082
+2026-10-07 01:28:24,671 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Возможны проблемы со связью или питанием.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:28:24,674 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.960194,30.311082
+2026-10-07 01:28:25,685 INFO    cane_server.services.monitor: Фоновая проверка: MonitorReport(silent_devices=0, sos_reminders=1, expired_commands=0)
+2026-10-07 01:28:25,689 INFO    telegram.dry_run: [TG → 1001] sendMessage [кнопки: ✅ Принял]:
+🆘 <b>Напоминание #1: тревога SOS от Трость Ивана</b> в 01:28 ещё никем не принята.
+2026-10-07 01:28:25,694 INFO    telegram.dry_run: [TG → 1002] sendMessage [кнопки: ✅ Принял]:
+🆘 <b>Напоминание #1: тревога SOS от Трость Ивана</b> в 01:28 ещё никем не принята.
+2026-10-07 01:28:29,368 INFO    cane_server.api.device_routes: Пакет cane-01 seq=28 type=pos buffered=True -> cmd=None
+2026-10-07 01:28:29,368 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,371 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+✅ Связь с Трость Ивана восстановлена (не было 15 с).
+2026-10-07 01:28:29,378 INFO    cane_server.api.device_routes: Пакет cane-01 seq=30 type=pos buffered=True -> cmd=None
+2026-10-07 01:28:29,379 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,382 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+✅ Связь с Трость Ивана восстановлена (не было 15 с).
+2026-10-07 01:28:29,389 INFO    cane_server.services.alerts: Событие still от cane-01 → чаты [1001, 1002]
+2026-10-07 01:28:29,394 INFO    cane_server.api.device_routes: Пакет cane-01 seq=31 type=still buffered=True -> cmd=None
+2026-10-07 01:28:29,394 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,403 INFO    cane_server.api.device_routes: Пакет cane-01 seq=32 type=pos buffered=True -> cmd=None
+2026-10-07 01:28:29,404 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,406 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🧍 <b>Трость Ивана: нет движения 12 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+⏳ Событие произошло в 01:28 (только что), получено с задержкой: не было связи.
+2026-10-07 01:28:29,413 INFO    cane_server.api.device_routes: Пакет cane-01 seq=29 type=pos buffered=True -> cmd=None
+2026-10-07 01:28:29,413 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,417 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.961262,30.311300
+2026-10-07 01:28:29,427 INFO    cane_server.api.device_routes: Пакет cane-01 seq=33 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:29,428 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:29,431 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🧍 <b>Трость Ивана: нет движения 12 мин</b>
+Человек остаётся на одном месте. Позиция — на карте ниже.
+🔋 заряд 85 % (4,05 В)
+⏳ Событие произошло в 01:28 (только что), получено с задержкой: не было связи.
+2026-10-07 01:28:29,434 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.961262,30.311300
+2026-10-07 01:28:29,439 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.961603,30.311351
+2026-10-07 01:28:29,442 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.961603,30.311351
+2026-10-07 01:28:31,285 INFO    telegram.dry_run: [TG → None] answerCallbackQuery: Вы приняли тревогу. Остальные сопровождающие уведомлены.
+2026-10-07 01:28:31,286 INFO    uvicorn.access: 127.0.0.1:58976 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:28:31,288 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+✅ Тревогу SOS от Трость Ивана принял(а) Пётр.
+2026-10-07 01:28:31,795 INFO    telegram.dry_run: [TG → None] answerCallbackQuery: Тревогу уже принял(а) Пётр.
+2026-10-07 01:28:31,795 INFO    uvicorn.access: 127.0.0.1:58977 - "POST /dev/bot HTTP/1.1" 200
+2026-10-07 01:28:32,435 WARNING cane_server.api.errors: Отклонён запрос POST /api/v1/telemetry от 127.0.0.1: 401 invalid_token (Неизвестный токен устройства)
+2026-10-07 01:28:32,435 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 401
+2026-10-07 01:28:32,439 WARNING cane_server.api.errors: Отклонён запрос POST /api/v1/telemetry от 127.0.0.1: 401 invalid_signature (Подпись HMAC не совпадает с телом запроса)
+2026-10-07 01:28:32,439 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 401
+2026-10-07 01:28:32,441 WARNING cane_server.api.errors: Отклонён запрос POST /api/v1/telemetry от 127.0.0.1: 400 malformed_json (Тело не является JSON: Expecting ',' delimiter: line 1 column 15 (char 14))
+2026-10-07 01:28:32,441 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 400
+2026-10-07 01:28:32,444 WARNING cane_server.api.errors: Отклонён запрос POST /api/v1/telemetry от 127.0.0.1: 422 validation_error ([{'field': 'lat', 'message': 'Input should be less than or equal to 90'}])
+2026-10-07 01:28:32,444 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 422
+2026-10-07 01:28:32,459 INFO    cane_server.api.device_routes: Пакет cane-01 seq=34 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:32,459 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:32,461 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.961621,30.311348
+2026-10-07 01:28:32,467 INFO    cane_server.api.device_routes: Пакет cane-01 seq=34 type=pos buffered=False (дубликат) -> cmd=None
+2026-10-07 01:28:32,467 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:32,471 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.961621,30.311348
+2026-10-07 01:28:32,482 INFO    cane_server.api.device_routes: Пакет cane-01 seq=35 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:32,483 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:32,487 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.961963,30.311541
+2026-10-07 01:28:32,490 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.961963,30.311541
+2026-10-07 01:28:35,506 INFO    cane_server.api.device_routes: Пакет cane-01 seq=36 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:35,506 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:35,509 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.962312,30.311703
+2026-10-07 01:28:35,513 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.962312,30.311703
+2026-10-07 01:28:38,524 INFO    cane_server.services.alerts: Событие batt_low от cane-01 → чаты [1001, 1002]
+2026-10-07 01:28:38,528 INFO    cane_server.api.device_routes: Пакет cane-01 seq=37 type=batt_low buffered=False -> cmd=None
+2026-10-07 01:28:38,528 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:38,531 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.962317,30.311689
+2026-10-07 01:28:38,535 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.962317,30.311689
+2026-10-07 01:28:38,540 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🪫 <b>Трость Ивана: низкий заряд</b>
+🔋 заряд 14 % (3,58 В)
+Пора поставить трость на зарядку.
+2026-10-07 01:28:38,543 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.962317,30.311689
+2026-10-07 01:28:38,547 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🪫 <b>Трость Ивана: низкий заряд</b>
+🔋 заряд 14 % (3,58 В)
+Пора поставить трость на зарядку.
+2026-10-07 01:28:38,551 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.962317,30.311689
+2026-10-07 01:28:41,550 INFO    cane_server.api.device_routes: Пакет cane-01 seq=38 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:41,550 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:41,552 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.962645,30.311819
+2026-10-07 01:28:41,556 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.962645,30.311819
+2026-10-07 01:28:44,568 INFO    cane_server.services.alerts: Событие batt_crit от cane-01 → чаты [1001, 1002]
+2026-10-07 01:28:44,574 INFO    cane_server.api.device_routes: Пакет cane-01 seq=39 type=batt_crit buffered=False -> cmd=None
+2026-10-07 01:28:44,574 INFO    uvicorn.access: 127.0.0.1:58975 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:44,576 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.962658,30.311776
+2026-10-07 01:28:44,580 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.962658,30.311776
+2026-10-07 01:28:44,584 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+🔴 <b>Трость Ивана: критический разряд</b>
+🔋 заряд 6 % (3,44 В)
+Трость отключается для защиты аккумулятора. Последняя позиция — на карте ниже.
+2026-10-07 01:28:44,588 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.962658,30.311776
+2026-10-07 01:28:44,591 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+🔴 <b>Трость Ивана: критический разряд</b>
+🔋 заряд 6 % (3,44 В)
+Трость отключается для защиты аккумулятора. Последняя позиция — на карте ниже.
+2026-10-07 01:28:44,594 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.962658,30.311776
+2026-10-07 01:28:54,099 INFO    cane_server.services.monitor: Фоновая проверка: MonitorReport(silent_devices=1, sos_reminders=0, expired_commands=0)
+2026-10-07 01:28:54,100 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Последним пришло сообщение о критическом разряде — вероятно, трость выключилась.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:28:54,105 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.962658,30.311776
+2026-10-07 01:28:54,109 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Последним пришло сообщение о критическом разряде — вероятно, трость выключилась.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:28:54,112 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.962658,30.311776
+2026-10-07 01:28:59,605 INFO    cane_server.api.device_routes: Пакет cane-01 seq=40 type=pos buffered=False -> cmd=None
+2026-10-07 01:28:59,606 INFO    uvicorn.access: 127.0.0.1:58979 - "POST /api/v1/telemetry HTTP/1.1" 200
+2026-10-07 01:28:59,608 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+✅ Связь с Трость Ивана восстановлена (не было 15 с).
+2026-10-07 01:28:59,611 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+✅ Связь с Трость Ивана восстановлена (не было 15 с).
+2026-10-07 01:28:59,614 INFO    telegram.dry_run: [TG → 1001] editMessageLiveLocation #29 59.963029,30.311708
+2026-10-07 01:28:59,617 INFO    telegram.dry_run: [TG → 1002] editMessageLiveLocation #31 59.963029,30.311708
+2026-10-07 01:29:09,325 INFO    cane_server.services.monitor: Фоновая проверка: MonitorReport(silent_devices=1, sos_reminders=0, expired_commands=0)
+2026-10-07 01:29:09,327 INFO    telegram.dry_run: [TG → 1001] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Возможны проблемы со связью или питанием.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:29:09,330 INFO    telegram.dry_run: [TG → 1001] sendLocation 59.963029,30.311708
+2026-10-07 01:29:09,334 INFO    telegram.dry_run: [TG → 1002] sendMessage:
+⚠️ <b>Трость Ивана не выходит на связь</b> уже 10 с.
+Возможны проблемы со связью или питанием.
+Последняя позиция (только что) — на карте ниже.
+2026-10-07 01:29:09,338 INFO    telegram.dry_run: [TG → 1002] sendLocation 59.963029,30.311708

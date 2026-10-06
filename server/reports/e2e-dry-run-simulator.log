@@ -1,0 +1,79 @@
+01:27:13 Симулятор cane-01 → http://127.0.0.1:8766
+01:27:13 
+=== Обычная ходьба: плановая позиция каждый период ===
+01:27:13 → seq=1 pos (59.95743, 30.30875) fix 85% wifi ← 200 ack=1 cmd=locate_now
+01:27:13    сервер просит locate_now → внеочередной фикс GPS
+01:27:13 → seq=2 pos (59.95742, 30.30877) fix 85% wifi ← 200 ack=2 cmd=None
+01:27:16 → seq=3 pos (59.95777, 30.30910) fix 85% wifi ← 200 ack=3 cmd=None
+01:27:19 → seq=4 pos (59.95810, 30.30935) fix 85% wifi ← 200 ack=4 cmd=None
+01:27:22 → seq=5 pos (59.95839, 30.30979) fix 85% wifi ← 200 ack=5 cmd=None
+01:27:25 
+=== Потеря и восстановление GPS ===
+01:27:25 → seq=6 pos (59.95866, 30.31021) fix 85% wifi ← 200 ack=6 cmd=None
+01:27:28    человек зашёл в помещение: фикса нет
+01:27:28 → seq=7 pos (59.95865, 30.31024) нет фикса 85% wifi ← 200 ack=7 cmd=None
+01:27:31 → seq=8 gps_lost (59.95865, 30.31024) нет фикса 85% wifi ← 200 ack=8 cmd=None
+01:27:34 → seq=9 pos (59.95865, 30.31024) нет фикса 85% wifi ← 200 ack=9 cmd=None
+01:27:37    человек вышел на улицу: фикс снова есть
+01:27:37 → seq=10 gps_ok (59.95863, 30.31024) fix 85% wifi ← 200 ack=10 cmd=None
+01:27:40 → seq=11 pos (59.95894, 30.31056) fix 85% wifi ← 200 ack=11 cmd=None
+01:27:43 
+=== Неподвижность: человек стоит на месте ===
+01:27:43 → seq=12 pos (59.95897, 30.31056) fix 85% wifi ← 200 ack=12 cmd=None
+01:27:46 → seq=13 pos (59.95897, 30.31057) fix 85% wifi ← 200 ack=13 cmd=None
+01:27:50 → seq=14 pos (59.95898, 30.31052) fix 85% wifi ← 200 ack=14 cmd=None
+01:27:53 → seq=15 still (59.95898, 30.31052) fix 85% wifi ← 200 ack=15 cmd=locate_now
+01:27:53    сервер просит locate_now → внеочередной фикс GPS
+01:27:53 → seq=16 pos (59.95897, 30.31056) fix 85% wifi ← 200 ack=16 cmd=None
+01:27:56 → seq=17 pos (59.95895, 30.31055) fix 85% wifi ← 200 ack=17 cmd=None
+01:27:59    напоминание устройства (в реальности через 30 мин)
+01:27:59 → seq=18 still (59.95897, 30.31056) fix 85% wifi ← 200 ack=18 cmd=None
+01:28:02    человек пошёл дальше
+01:28:02 → seq=19 pos (59.95931, 30.31069) fix 85% wifi ← 200 ack=19 cmd=None
+01:28:05 
+=== SOS: удержание кнопки ≥ 2 с ===
+01:28:05 → seq=20 sos (59.95931, 30.31075) fix 85% wifi ← 200 ack=20 cmd=None
+01:28:05    имитирую потерю ответа: повторяю тот же пакет SOS (тот же seq)
+01:28:05 → seq=20 sos (59.95931, 30.31075) fix 85% wifi ← 200 ack=20 (дубликат) cmd=None
+01:28:05    режим SOS: позиция в 2 раза чаще обычного
+01:28:05 → seq=21 pos (59.95940, 30.31077) fix 85% wifi ← 200 ack=21 cmd=None
+01:28:06 → seq=22 pos (59.95949, 30.31076) fix 85% wifi ← 200 ack=22 cmd=None
+01:28:08 → seq=23 pos (59.95959, 30.31081) fix 85% wifi ← 200 ack=23 cmd=None
+01:28:09 → seq=24 pos (59.95966, 30.31081) fix 85% wifi ← 200 ack=24 cmd=None
+01:28:11 → seq=25 pos (59.95976, 30.31091) fix 85% wifi ← 200 ack=25 cmd=None
+01:28:12 → seq=26 pos (59.95987, 30.31092) fix 85% wifi ← 200 ack=26 cmd=None
+01:28:14 
+=== Нет связи: запись в OfflineBuffer и досылка ===
+01:28:14 → seq=27 pos (59.96019, 30.31108) fix 85% wifi ← 200 ack=27 cmd=None
+01:28:17    [нет связи] seq=28 pos → OfflineBuffer (1)
+01:28:20    [нет связи] seq=29 pos → OfflineBuffer (2)
+01:28:23    [нет связи] seq=30 pos → OfflineBuffer (3)
+01:28:26    [нет связи] seq=31 still → OfflineBuffer (4)
+01:28:26    [нет связи] seq=32 pos → OfflineBuffer (5)
+01:28:29    связь восстановлена
+01:28:29    досылаю 5 накопленных записей (в случайном порядке)
+01:28:29 → seq=28 pos buffered (59.96056, 30.31120) fix 85% wifi ← 200 ack=28 cmd=None
+01:28:29 → seq=30 pos buffered (59.96126, 30.31130) fix 85% wifi ← 200 ack=30 cmd=None
+01:28:29 → seq=31 still buffered (59.96126, 30.31130) fix 85% wifi ← 200 ack=31 cmd=None
+01:28:29 → seq=32 pos buffered (59.96128, 30.31132) fix 85% wifi ← 200 ack=32 cmd=None
+01:28:29 → seq=29 pos buffered (59.96091, 30.31113) fix 85% wifi ← 200 ack=29 cmd=None
+01:28:29 → seq=33 pos (59.96160, 30.31135) fix 85% wifi ← 200 ack=33 cmd=None
+01:28:32 
+=== Ошибочные запросы: сервер должен их отклонить ===
+01:28:32    неверный токен: 401 {"error":"invalid_token","detail":"Неизвестный токен устройства"}
+01:28:32    неверная подпись: 401 {"error":"invalid_signature","detail":"Подпись HMAC не совпадает с телом запроса"}
+01:28:32    битый JSON: 400 {"error":"malformed_json","detail":"Тело не является JSON: Expecting ',' delimiter: line 1 column 15 (char 14)"}
+01:28:32    широта 200°: 422 {"error":"validation_error","detail":[{"field":"lat","message":"Input should be less than or equal to 90"}]}
+01:28:32    корректный пакет: 200 {"ack":34,"dup":false,"cmd":null,"cfg":{"period_s":3}}
+01:28:32    тот же пакет ещё раз: 200 {"ack":34,"dup":true,"cmd":null,"cfg":{"period_s":3}}
+01:28:32 
+=== Разряд батареи: предупреждение, критический уровень, глубокий сон ===
+01:28:32 → seq=35 pos (59.96196, 30.31154) fix 38% wifi ← 200 ack=35 cmd=None
+01:28:35 → seq=36 pos (59.96231, 30.31170) fix 24% wifi ← 200 ack=36 cmd=None
+01:28:38 → seq=37 batt_low (59.96232, 30.31169) fix 14% wifi ← 200 ack=37 cmd=None
+01:28:41 → seq=38 pos (59.96265, 30.31182) fix 9% wifi ← 200 ack=38 cmd=None
+01:28:44 → seq=39 batt_crit (59.96266, 30.31178) fix 6% wifi ← 200 ack=39 cmd=None
+01:28:44    глубокий сон: устройство молчит 15 с
+01:28:59    трость поставили на зарядку и включили
+01:28:59 → seq=40 pos (59.96303, 30.31171) fix 90% wifi ← 200 ack=40 cmd=None
+01:29:02 Сценарий завершён

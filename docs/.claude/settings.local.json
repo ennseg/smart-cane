@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/22866/OneDrive/Desktop/ITMO/встроенки/course project/server/**)",
+      "Read(//c/Users/22866/OneDrive/Desktop/ITMO/встроенки/course project/**)"
+    ]
+  }
+}
