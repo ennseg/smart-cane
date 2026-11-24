@@ -1,0 +1,8 @@
+#pragma once
+
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+#define CANE_DEVICE_ID "YOUR_DEVICE_ID"
+#define CANE_SERVER_URL "http://192.0.2.1:8000/api/v1/telemetry"
+#define CANE_TOKEN "YOUR_DEVICE_TOKEN"
+#define CANE_HMAC_SECRET "YOUR_HMAC_SECRET"
